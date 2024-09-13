@@ -1,0 +1,87 @@
+body {
+  background: url('./book.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: rgba(34, 145, 62, 0.46);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+h1 {
+  color: rgb(31, 122, 46);
+  font-size: 55px;
+  font-family: "Marcellus", serif;
+}
+
+input {
+  width: 915px;
+  border: none; 
+  font-size: 20px;
+  background: rgba(207, 178, 32, 0.555);
+  padding: 20px; 
+  margin-bottom: 20px;
+  font-family: "Marcellus", serif;
+}
+
+button {
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  background: rgba(207, 178, 32, 0.555);
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Marcellus", serif;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(34, 145, 62, 0.632);
+  color: rgb(235, 252, 247);
+  width: 800px;
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  font-family: "Marcellus", serif;
+}
+
+
+@media all and (max-width: 500px) {
+  input, button {
+    font-size: 15px;
+    padding: 7px;
+  }
+
+  input {
+    width: 215px;    
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  .list {
+    width: 300px;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  input {
+    width: 415px;    
+  }
+
+  .list {
+    width: 500px;
+    font-size: 16px;
+  }
+}
+
+
